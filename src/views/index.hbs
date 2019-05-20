@@ -1,0 +1,59 @@
+<div class="card">
+    <div class="card-header bg-dark">
+        <h3 class="card-title text-white">
+            <i class="fas fa-users"> Usuarios</i>
+        </h3>
+    </div>
+<div class="card-body">
+    
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Cargo</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each mostrarDatos}}
+            <tr>
+                
+                <td>{{userId}}</td>
+                <td>{{id}}</td>
+                <td>{{title}}</td>
+                <td>{{body}}</td>
+                <td>
+                    <div class="row">
+                            <a class="btn btn-light" data-toggle="modal" data-target="#exampleModal"  id="modalVer"><i class="fas fa-eye"></i></a>
+                            <button class="btn btn-light"><i class="far fa-edit"></i></button>
+                            <button class="btn btn-light"><i class="fas fa-trash-alt"></i></button>                     
+                    </div>
+                </td>
+                
+            </tr>
+             {{/each}}
+        </tbody>
+    </table>
+</div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
