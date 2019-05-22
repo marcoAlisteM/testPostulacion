@@ -1,0 +1,99 @@
+{
+    "status": {
+        "code": "200",
+        "message": "Función dinámica de skills: Dispone de habilidades tecnicas de los usuarios."
+    },
+    "response": {
+        "count": 11,
+        "data": [
+            {
+                "de752804-41d0-11e9-b210-d663bd873d93": {
+                    "NodeJS": 25,
+                    "JQuery": 50,
+                    "Ionic": 15,
+                    "Postgres": 10
+                }
+            },
+            {
+                "de751dc8-41d0-11e9-b210-d663bd873d93": {
+                    "C/C++": 5,
+                    "HTML": 1,
+                    "Docker": 4,
+                    "Oracle bbdd": 10
+                }
+            },
+            {
+                "de75203e-41d0-11e9-b210-d663bd873d93": {
+                    "NodeJS": 6,
+                    "JQuery": 10,
+                    "Angular": 9,
+                    "SQL": 4
+                }
+            },
+            {
+                "de7521ba-41d0-11e9-b210-d663bd873d93": {
+                    "php": 1,
+                    "JQuery": 4,
+                    "Angular": 5,
+                    "Oracle bbdd": 9
+                }
+            },
+            {
+                "de7513aa-41d0-11e9-b210-d663bd873d93": {
+                    "NodeJS": 9,
+                    "JQuery": 10,
+                    "Docker": 3,
+                    "SQL": 6
+                }
+            },
+            {
+                "de751756-41d0-11e9-b210-d663bd873d93": {
+                    ".Net": 5,
+                    "JQuery": 7,
+                    "Docker": 5,
+                    "Postgres": 3
+                }
+            },
+            {
+                "de75197c-41d0-11e9-b210-d663bd873d93": {
+                    "C/C++": 5,
+                    "HTML": 10,
+                    "Angular": 6,
+                    "Postgres": 5
+                }
+            },
+            {
+                "de751c4c-41d0-11e9-b210-d663bd873d93": {
+                    "NodeJS": 2,
+                    "JQuery": 9,
+                    "Ionic": 7,
+                    "Oracle bbdd": 1
+                }
+            },
+            {
+                "de7523cc-41d0-11e9-b210-d663bd873d93": {
+                    "NodeJS": 4,
+                    "JQuery": 2,
+                    "Ionic": 4,
+                    "Oracle bbdd": 4
+                }
+            },
+            {
+                "de752534-41d0-11e9-b210-d663bd873d93": {
+                    ".Net": 4,
+                    "JQuery": 6,
+                    "Docker": 6,
+                    "Oracle bbdd": 8
+                }
+            },
+            {
+                "71021a9b-641c-4a38-8680-6368485d248f": {
+                    "php": 10,
+                    "JQuery": 3,
+                    "Ionic": 1,
+                    "Oracle bbdd": 1
+                }
+            }
+        ]
+    }
+}

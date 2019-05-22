@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -25,4 +26,54 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+<script>
+    var item = '';
+    var ver = datos=>{
+        $('#lblNombre').text(datos.nombre);
+        $('#lblProfesion').text(datos.profesion);
+        $('#lblEdad').text(datos.edad);
+        $('#lblDireccion').text(datos.direccion);
+        $('#lblTelefono').text(datos.telefono);
+        $('#lblEmail').text(datos.email);
+        $('#imgPerfil').attr("src",datos.url_image);
+       console.log(datos.skill);
+
+        //nombre para los graficos
+        var prueba = '';
+        for(var a in datos.skill){
+                prueba = a ;
+                console.log(a);
+        }
+
+
+         let myChart = document.getElementById('myChart').getContext('2d');
+    let massPopChart = new Chart(myChart,{
+        type:'bar',
+        data:{
+            labels:[ 'Nodejs','JQuery','Docker'],
+            datasets:[{
+                label:'population',
+                data:[
+                    parseInt(datos.skill.nodeJs),
+                    parseInt(datos.skill.JQuery),
+                    parseInt(datos.skill.Docker?'':0)
+                    
+                ]
+            }]
+        }
+    });
+    }
+    /*$('#modalVer').click(()=>{
+        var a = JSON.stringify($('#modalVer').data('id'));
+        console.log(a);
+        console.log('hola');
+    });*/
+    var myGreatFunction = item =>{
+        console.log(JSON.parse(item));
+    }
+</script>
+<script>
+    
+</script>
 </html>

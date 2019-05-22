@@ -12,8 +12,7 @@ module.exports = app =>{
         defaultLayout: 'main',
         partialsDir: path.join(app.get('views'),'partials'),
         layoutsDir : path.join(app.get('views'),'layouts'),
-        extname: '.hbs',
-        helpers: require('./helpers')
+        extname: '.hbs'
     }))
     app.set('view engine', '.hbs');
     
