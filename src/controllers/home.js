@@ -1,7 +1,6 @@
 const ctrl = {};
 const http = require('http');
 const fs = require('fs');
-const request = require('request');
 var datos ='';
 
 const option={
